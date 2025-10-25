@@ -1,0 +1,193 @@
+*/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffaf3;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #ff7043;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  color: #000;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: #fff8f0 !important;
+  border-bottom: 2px solid #ff7043;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #ff7043 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ff5722 !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff7043 !important;
+}
+
+.btn-outline-success {
+  border-color: #ff7043;
+  color: #ff7043;
+  transition: 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #ff7043;
+  color: #fff;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #ff7043;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* ========== CARDS & IMAGES ========== */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* ========== LISTS ========== */
+ul {
+  list-style-type: square;
+  margin: 15px 0 25px 25px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #ff7043;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #ff7043;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 991px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  main {
+    margin: 30px 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
